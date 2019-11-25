@@ -1,0 +1,4 @@
+<% @flats.each do |flat| %>
+	<img src="<%= flat["imageUrl"] %>" alt="" width="200">
+	<%= link_to flat["name"], flat_path(flat["id"]) %>
+<% end %>
